@@ -1,0 +1,47 @@
+/* Widget */
+.button {
+  @apply bg-brand-500 rounded-full px-3 h-12 text-white flex items-center;
+}
+
+.chat-position {
+  @apply absolute bottom-4 right-4 flex flex-col items-end md:bottom-10 md:right-10;
+}
+
+.chat-box{
+  @apply max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear;
+}
+
+.chat-icon {
+  @apply w-6 h-6;
+}
+
+.chat-text {
+  @apply pl-2;
+}
+
+/* WidgetForm*/
+.box-form{
+ @apply bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg 
+ w-[calc(100vw-2rem)] md:w-auto;
+}
+
+.textarea-form{
+  @apply min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 
+  text-zinc-100 border-[1px] border-[#52525B] bg-transparent rounded-md
+  focus:border-brand-500 focus:ring-offset-brand-500 focus:ring-1 focus:outline-none resize-none;
+}
+
+.button-submit{
+  @apply p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none
+  focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors
+}
+
+.button-camera{
+  @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500
+}
+
+.button-feedback{
+  @apply py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent  leading-6 
+  hover:bg-zinc-700 text-sm transition-colors focus:outline-none focus:ring-2 
+  focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500;
+}
